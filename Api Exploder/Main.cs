@@ -23,7 +23,7 @@ namespace Api_Exploder
             var url = textUrl.Text;
             var body = textBody.Text;
 
-            textStatus.Text = url + body;
+           // textStatus.Text = url + body;
 
             using HttpClient client = new HttpClient();
 
@@ -33,25 +33,22 @@ namespace Api_Exploder
 
                 HttpResponseMessage response = await client.PostAsync(url, content);
 
-      
+                string responseBody = await response.Content.ReadAsStringAsync();
 
+                if (response.StatusCode == HttpStatusCode.OK){
 
-                if (response.StatusCode == HttpStatusCode.OK)
-                {
+                    textStatus.Text = response.StatusCode.ToString() + responseBody;
 
-                    textStatus.Text = "ok";
+                }else{
 
-                }
-                else 
-                {
-
-                    textStatus.Text = "fail!";
+                    textStatus.Text = response.StatusCode.ToString();
 
                 }
             }
 
-            catch { 
-            
+            catch {
+
+                textStatus.Text = "FAIL, ERROR IN URL!";
             }
             
 

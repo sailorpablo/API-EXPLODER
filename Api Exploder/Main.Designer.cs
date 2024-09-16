@@ -35,6 +35,7 @@
             textBody = new TextBox();
             btnSend = new Button();
             textStatus = new TextBox();
+            label4 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -49,7 +50,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(30, 43);
+            label2.Location = new Point(1, 125);
             label2.Name = "label2";
             label2.Size = new Size(28, 15);
             label2.TabIndex = 1;
@@ -58,7 +59,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(20, 80);
+            label3.Location = new Point(1, 154);
             label3.Name = "label3";
             label3.Size = new Size(38, 15);
             label3.TabIndex = 2;
@@ -66,14 +67,14 @@
             // 
             // textUrl
             // 
-            textUrl.Location = new Point(64, 40);
+            textUrl.Location = new Point(54, 125);
             textUrl.Name = "textUrl";
-            textUrl.Size = new Size(860, 23);
+            textUrl.Size = new Size(850, 23);
             textUrl.TabIndex = 3;
             // 
             // textBody
             // 
-            textBody.Location = new Point(64, 80);
+            textBody.Location = new Point(54, 154);
             textBody.Multiline = true;
             textBody.Name = "textBody";
             textBody.Size = new Size(850, 243);
@@ -81,7 +82,7 @@
             // 
             // btnSend
             // 
-            btnSend.Location = new Point(421, 348);
+            btnSend.Location = new Point(412, 403);
             btnSend.Name = "btnSend";
             btnSend.Size = new Size(75, 23);
             btnSend.TabIndex = 5;
@@ -91,10 +92,19 @@
             // 
             // textStatus
             // 
-            textStatus.Location = new Point(54, 471);
+            textStatus.Location = new Point(111, 491);
             textStatus.Name = "textStatus";
-            textStatus.Size = new Size(860, 23);
+            textStatus.Size = new Size(793, 23);
             textStatus.TabIndex = 3;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(1, 494);
+            label4.Name = "label4";
+            label4.Size = new Size(104, 15);
+            label4.TabIndex = 1;
+            label4.Text = "STATUS RESPONSE";
             // 
             // Main
             // 
@@ -106,6 +116,7 @@
             Controls.Add(textStatus);
             Controls.Add(textUrl);
             Controls.Add(label3);
+            Controls.Add(label4);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Main";
@@ -124,5 +135,6 @@
         private TextBox textBody;
         private Button btnSend;
         private TextBox textStatus;
+        private Label label4;
     }
 }
