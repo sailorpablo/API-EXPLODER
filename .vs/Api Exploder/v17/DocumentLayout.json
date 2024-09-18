@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|C:\\Users\\josep\\source\\repos\\Api Exploder\\api exploder\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|c:\\users\\josep\\source\\repos\\api exploder\\api exploder\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|c:\\users\\josep\\source\\repos\\api exploder\\api exploder\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Main.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Main.Designer.cs",
+              "RelativeDocumentMoniker": "Api Exploder\\Main.Designer.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Main.Designer.cs",
+              "RelativeToolTip": "Api Exploder\\Main.Designer.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA1wBsAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:32:19.482Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,7 +45,7 @@
               "RelativeDocumentMoniker": "Api Exploder\\Main.cs",
               "ToolTip": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Main.cs",
               "RelativeToolTip": "Api Exploder\\Main.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAA9wCgAAAAAAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAgwDEAAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-14T16:43:07.368Z",
               "EditorCaption": ""
@@ -42,7 +59,8 @@
               "ToolTip": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Main.cs [Design]",
               "RelativeToolTip": "Api Exploder\\Main.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T16:40:58.589Z"
+              "WhenOpened": "2024-09-14T16:40:58.589Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
