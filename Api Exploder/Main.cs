@@ -61,13 +61,19 @@ namespace Api_Exploder
 
                 }
 
-                PropertyInfo[] properties = typeof(EnviromentVariables).GetProperties(); //pega as propriedades da classe
+                //PropertyInfo[] properties = typeof(EnviromentVariables).GetProperties(); //pega as propriedades da classe
+
+                var properties = variables.variables.Keys;
 
                 foreach (string enviromentVariableBody in enviromentVariablesBody) {
 
-                    foreach (PropertyInfo property in properties) {
+                    foreach (var property in properties) {
 
-                        if (property.Name.Equals(enviromentVariableBody, StringComparison.OrdinalIgnoreCase)) { 
+                        if (property.Equals(enviromentVariableBody, StringComparison.OrdinalIgnoreCase)) {
+
+                            string replacer = variables.variables[property];
+
+                            body = body.Replace(enviromentVariableBody, replacer);
 
                         }
                         
