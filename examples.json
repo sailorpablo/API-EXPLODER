@@ -1,0 +1,34 @@
+ //https://bmpteste.moneyp.com.br/api/BMPDigital/IncluirPropostaManualSimplificado
+{
+  {
+    "auth": {
+
+      "Usuario": "jose.crema@fulltechpro.com.br",
+      "Senha": "Jc@040923",
+      "CodigoParametro": "JOSE_TESTE_INTEGRACAO",
+      "Chave": "79aef6c8-7429-4dfc-b4bd-f5ca42962df0"
+    },
+    "dto": {
+      "DocumentoCliente": "01272819914",
+      "DocumentoParceiroCorrespondente": "01272819914",
+      "CodigoOperacao": "{{$guid}}",
+      "VlrSolicitado": 1100,
+      "Prazo": 3,
+      "PercJurosNegociado": 15,
+      "VlrIOF": 1.52568,
+      "PercIOF": 1.5787,
+      "PercIOFAdicional": 1.55453,
+      "VlrParcela": 500,
+      "VlrTAC": 12.57,
+      "VlrBoleto": 0,
+      "DtPrimeiroVencto": "{{$nextMonth}}",
+      "VlrOutrasDespesas": 0
+    },
+    "parametros": [
+      {
+        "Nome": "string",
+        "Valor": "string"
+      }
+    ]
+  }
+}

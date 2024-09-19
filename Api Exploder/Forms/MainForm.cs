@@ -6,12 +6,13 @@ using System;
 using System.Net.Http.Json;
 using System.Text.RegularExpressions;
 using System.Reflection;
+using Api_Exploder.Forms;
 
 namespace Api_Exploder
 {
-    public partial class Main : Form
+    public partial class MainForm : Form
     {
-        public Main()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -72,8 +73,9 @@ namespace Api_Exploder
                         if (property.Equals(enviromentVariableBody, StringComparison.OrdinalIgnoreCase)) {
 
                             string replacer = variables.variables[property];
+                            string replaced = "{{$" + enviromentVariableBody + "}}";
 
-                            body = body.Replace(enviromentVariableBody, replacer);
+                            body = body.Replace(replaced, replacer);
 
                         }
                         
@@ -167,7 +169,9 @@ namespace Api_Exploder
 
         private void button2_Click(object sender, EventArgs e)
         {
+            EnvVarForm envVarForm = new EnvVarForm();
 
+            envVarForm.Show();
         }
     }
 }
