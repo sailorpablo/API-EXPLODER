@@ -24,7 +24,8 @@ namespace Api_Exploder
 
         }
 
-        private async void SendRequestApi(string body, string url){
+        private async void SendRequestApi(string body, string url)
+        {
 
             using HttpClient client = new HttpClient();
 
@@ -77,14 +78,14 @@ namespace Api_Exploder
 
                 HttpResponseMessage response = await client.PostAsync(url, content);
 
-                string messageFind = "Msg";
-                string resultFind = "Result";
+                string messageFind = "{";
+                string resultFind = "}";
 
 
                 string responseBody = await response.Content.ReadAsStringAsync();
 
-                int messageIndex = responseBody.IndexOf(messageFind) + 5;
-                int resultIndex = responseBody.IndexOf(resultFind) - 2;
+                int messageIndex = responseBody.IndexOf(messageFind);
+                int resultIndex = responseBody.IndexOf(resultFind);
 
 
                 // Reposta
@@ -122,11 +123,20 @@ namespace Api_Exploder
             {
                 options = "single";
 
-                SendRequestApi(body,url);
+                SendRequestApi(body, url);
             }
             else if (radioBtnMultiple.Checked)
             {
                 options = "multiple";
+
+                int multipleCount = Convert.ToInt32(textBoxMultiple.Text);
+
+                for (int i = 0; i < multipleCount; i++)
+                {
+                    SendRequestApi(body, url);
+                } 
+                    
+
 
 
             }
@@ -178,6 +188,11 @@ namespace Api_Exploder
             EnvVarForm envVarForm = new EnvVarForm();
 
             envVarForm.Show();
+        }
+
+        private void textBoxMultiple_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

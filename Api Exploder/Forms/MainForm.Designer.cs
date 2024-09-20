@@ -158,6 +158,7 @@
             textBoxMultiple.TabIndex = 7;
             textBoxMultiple.Visible = false;
             textBoxMultiple.Click += textBox1_Click;
+            textBoxMultiple.TextChanged += textBoxMultiple_TextChanged;
             // 
             // button1
             // 
@@ -188,7 +189,7 @@
             checkBox1.TabIndex = 10;
             checkBox1.UseVisualStyleBackColor = true;
             // 
-            // Main
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -208,7 +209,7 @@
             Controls.Add(label4);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "Main";
+            Name = "MainForm";
             Text = "Form1";
             Load += Main_Load;
             ResumeLayout(false);
