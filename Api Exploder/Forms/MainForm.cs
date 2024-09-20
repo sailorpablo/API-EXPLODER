@@ -91,7 +91,7 @@ namespace Api_Exploder
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
 
-                    textStatus.Text = response.StatusCode.ToString() + ", " + responseBody.Substring(messageIndex, resultIndex - messageIndex);
+                    textStatus.Text = response.StatusCode.ToString() + ",  " + responseBody.Substring(messageIndex, resultIndex - messageIndex);
 
                 }
                 else
@@ -121,10 +121,14 @@ namespace Api_Exploder
             if (radioBtnSingle.Checked)
             {
                 options = "single";
+
+                SendRequestApi(body,url);
             }
             else if (radioBtnMultiple.Checked)
             {
                 options = "multiple";
+
+
             }
             else if (radioBtnExploder.Checked)
             {

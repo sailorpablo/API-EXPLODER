@@ -16,3 +16,4 @@ C:\Users\josep\source\repos\Api Exploder\Api Exploder\obj\Debug\net8.0-windows\A
 C:\Users\josep\source\repos\Api Exploder\Api Exploder\obj\Debug\net8.0-windows\ref\Api Exploder.dll
 C:\Users\josep\source\repos\Api Exploder\Api Exploder\obj\Debug\net8.0-windows\Api_Exploder.Forms.EnvVarForm.resources
 C:\Users\josep\source\repos\Api Exploder\Api Exploder\obj\Debug\net8.0-windows\Api_Exploder.MainForm.resources
+C:\Users\josep\source\repos\Api Exploder\Api Exploder\obj\Debug\net8.0-windows\Api_Exploder.Forms.LogsForm.resources
