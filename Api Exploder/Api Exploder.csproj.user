@@ -4,6 +4,9 @@
     <Compile Update="Forms\EnvVarForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\LogsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

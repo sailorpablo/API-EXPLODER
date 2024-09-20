@@ -7,6 +7,8 @@ using System.Net.Http.Json;
 using System.Text.RegularExpressions;
 using System.Reflection;
 using Api_Exploder.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
+using System.Security.Policy;
 
 namespace Api_Exploder
 {
@@ -22,26 +24,7 @@ namespace Api_Exploder
 
         }
 
-        private async void button1_Click(object sender, EventArgs e)
-        {
-            var url = textUrl.Text;
-            var body = textBody.Text;
-
-            string options = "";
-
-            if (radioBtnSingle.Checked)
-            {
-                options = "single";
-            }
-            else if (radioBtnMultiple.Checked)
-            {
-                options = "multiple";
-            }
-            else if (radioBtnExploder.Checked)
-            {
-                options = "exploder";
-            }
-
+        private async void SendRequestApi(string body, string url){
 
             using HttpClient client = new HttpClient();
 
@@ -51,12 +34,13 @@ namespace Api_Exploder
                 EnviromentVariables variables = new EnviromentVariables(); //pega classe das variaves
 
                 string patternVariable = @"\{\{\$([^}]+)\}\}"; //padrao comeca {{$ e termina }}
-                
+
                 MatchCollection matches = Regex.Matches(body, patternVariable); //palavras com esse padrao do Body
 
-                List <string> enviromentVariablesBody = new List<string>(); //lista para jogar as strings
+                List<string> enviromentVariablesBody = new List<string>(); //lista para jogar as strings
 
-                foreach (Match match in matches) {
+                foreach (Match match in matches)
+                {
 
                     enviromentVariablesBody.Add(match.Groups[1].Value); //loop que adiciona na lista, as palavras encontradas
 
@@ -66,19 +50,20 @@ namespace Api_Exploder
 
                 var properties = variables.variables.Keys;
 
-                foreach (string enviromentVariableBody in enviromentVariablesBody) {
+                foreach (string enviromentVariableBody in enviromentVariablesBody)
+                {
 
-                    foreach (var property in properties) {
+                    foreach (var property in properties)
+                    {
 
-                        if (property.Equals(enviromentVariableBody, StringComparison.OrdinalIgnoreCase)) {
+                        if (property.Equals(enviromentVariableBody, StringComparison.OrdinalIgnoreCase))
+                        {
 
                             string replacer = variables.variables[property];
                             string replaced = "{{$" + enviromentVariableBody + "}}";
 
                             body = body.Replace(replaced, replacer);
-
                         }
-                        
                     }
 
                 }
@@ -102,13 +87,6 @@ namespace Api_Exploder
                 int resultIndex = responseBody.IndexOf(resultFind) - 2;
 
 
-
-
-
-
-
-
-
                 // Reposta
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
@@ -129,6 +107,30 @@ namespace Api_Exploder
 
                 textStatus.Text = "FAIL, ERROR IN URL!";
             }
+
+
+        }
+
+        private async void button1_Click(object sender, EventArgs e)
+        {
+            var url = textUrl.Text;
+            var body = textBody.Text;
+
+            string options = "";
+
+            if (radioBtnSingle.Checked)
+            {
+                options = "single";
+            }
+            else if (radioBtnMultiple.Checked)
+            {
+                options = "multiple";
+            }
+            else if (radioBtnExploder.Checked)
+            {
+                options = "exploder";
+            }
+
 
 
 
