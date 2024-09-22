@@ -9,6 +9,7 @@ using System.Reflection;
 using Api_Exploder.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 using System.Security.Policy;
+using System.Linq;
 
 namespace Api_Exploder
 {
@@ -134,8 +135,8 @@ namespace Api_Exploder
                 for (int i = 0; i < multipleCount; i++)
                 {
                     SendRequestApi(body, url);
-                } 
-                    
+                }
+
 
 
 
@@ -193,6 +194,58 @@ namespace Api_Exploder
         private void textBoxMultiple_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBody_TextChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true) 
+            {
+                // Salva a posição atual do cursor para restaurar  depois
+                int cursorPositionInit = textBody.SelectionStart;
+
+                // Desabilita temporariamente o evento TextChanged para evitar loops infinitos
+                textBody.TextChanged -= textBody_TextChanged;
+
+                // Define um padrão de regex para encontrar o texto entre {{$ e }}
+                string patternOpen = @"\{\{\$";
+                string patternClose = @"\}\}";
+                var matchesPatterOpen = System.Text.RegularExpressions.Regex.Matches(textBody.Text, patternOpen);
+                var matchesPatterClose = System.Text.RegularExpressions.Regex.Matches(textBody.Text, patternClose);
+
+                // Primeiro, limpa toda a formatação
+                textBody.SelectAll();
+                textBody.Font = new Font(textBody.Font, FontStyle.Regular);
+
+           
+                if (matchesPatterOpen.Count > matchesPatterClose.Count)
+                {   
+                    int lengthTextRemaining = textBody.Text.Length - cursorPositionInit;
+
+                    textBody.Select(cursorPositionInit, lengthTextRemaining);
+                    textBody.SelectionFont = new Font(textBody.Font, FontStyle.Bold | FontStyle.Italic);
+                } 
+                
+                else if (matchesPatterOpen.Count == matchesPatterClose.Count)
+
+                {
+                    textBody.Select(cursorPositionInit, 0);
+                    textBody.SelectionFont = new Font(textBody.Font, FontStyle.Regular);
+                };
+
+
+
+                // Restaura a posição do cursor
+                textBody.SelectionStart = cursorPositionInit;
+                textBody.SelectionLength = 0;
+
+                // Reanexa o evento TextChanged
+                textBody.TextChanged += textBody_TextChanged;
+            }
         }
     }
 }
