@@ -174,16 +174,6 @@ namespace Api_Exploder
 
         }
 
-        private void textBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             EnvVarForm envVarForm = new EnvVarForm();
@@ -198,6 +188,37 @@ namespace Api_Exploder
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+            string patternVariable = @"\{\{\$([^}]+)\}\}";
+
+            MatchCollection matches = Regex.Matches(textBody.Text, patternVariable);
+
+            if(checkBox1.Checked == true)
+            {
+                foreach (Match match in matches)
+                {
+
+
+                    int replacerLength = match.Length;
+                    int replacerIndex = match.Index;
+
+                    textBody.Select(replacerIndex, replacerLength);
+                    textBody.SelectionFont = new Font(textBody.Font, FontStyle.Bold | FontStyle.Italic);
+
+                    textBody.Select(replacerIndex + replacerLength, 0);
+                    textBody.SelectionFont = new Font(textBody.Font, FontStyle.Regular);
+
+                    /*Verifcar, nao esta 100 por cento ainda, depois da variavel o prox caracter fica em italico*/
+
+                }
+            }
+
+            if (checkBox1.Checked == false)
+            {
+                textBody.SelectAll();
+                textBody.SelectionFont = new Font(textBody.Font, FontStyle.Regular);
+            }
+
+
 
         }
 

@@ -7,36 +7,8 @@
       "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|C:\\Users\\josep\\source\\repos\\Api Exploder\\api exploder\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|c:\\users\\josep\\source\\repos\\api exploder\\api exploder\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|c:\\users\\josep\\source\\repos\\api exploder\\api exploder\\forms\\mainform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\forms\\mainform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|C:\\Users\\josep\\source\\repos\\Api Exploder\\api exploder\\forms\\logsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\forms\\logsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|c:\\users\\josep\\source\\repos\\api exploder\\api exploder\\forms\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\forms\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|c:\\users\\josep\\source\\repos\\api exploder\\api exploder\\forms\\envvarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\forms\\envvarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|c:\\users\\josep\\source\\repos\\api exploder\\api exploder\\enviromentvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\enviromentvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|C:\\Users\\josep\\source\\repos\\Api Exploder\\api exploder\\forms\\envvarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\forms\\envvarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|c:\\users\\josep\\source\\repos\\api exploder\\api exploder\\forms\\envvarform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\forms\\envvarform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -57,8 +29,7 @@
               "ToolTip": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\MainForm.cs [Design]",
               "RelativeToolTip": "Api Exploder\\Forms\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T16:40:58.589Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-09-22T21:58:40.266Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -69,98 +40,9 @@
               "RelativeDocumentMoniker": "Api Exploder\\Forms\\MainForm.cs",
               "ToolTip": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\MainForm.cs",
               "RelativeToolTip": "Api Exploder\\Forms\\MainForm.cs",
-              "ViewState": "AQIAANYAAAAAAAAAAAAgwOgAAABoAAAA",
+              "ViewState": "AQIAALcAAAAAAAAAAAAxwNIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-14T16:43:07.368Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainForm.resx",
-              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\MainForm.resx",
-              "RelativeDocumentMoniker": "Api Exploder\\Forms\\MainForm.resx",
-              "ToolTip": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\MainForm.resx",
-              "RelativeToolTip": "Api Exploder\\Forms\\MainForm.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-09-22T03:56:28.155Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\MainForm.Designer.cs",
-              "RelativeDocumentMoniker": "Api Exploder\\Forms\\MainForm.Designer.cs",
-              "ToolTip": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\MainForm.Designer.cs",
-              "RelativeToolTip": "Api Exploder\\Forms\\MainForm.Designer.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAA1wAwAAABrAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T03:51:19.591Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LogsForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\LogsForm.cs",
-              "RelativeDocumentMoniker": "Api Exploder\\Forms\\LogsForm.cs",
-              "ToolTip": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\LogsForm.cs [Design]",
-              "RelativeToolTip": "Api Exploder\\Forms\\LogsForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T21:59:26.361Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EnviromentVariables.cs",
-              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\EnviromentVariables.cs",
-              "RelativeDocumentMoniker": "Api Exploder\\EnviromentVariables.cs",
-              "ToolTip": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\EnviromentVariables.cs",
-              "RelativeToolTip": "Api Exploder\\EnviromentVariables.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T20:35:39.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EnvVarForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\EnvVarForm.cs",
-              "RelativeDocumentMoniker": "Api Exploder\\Forms\\EnvVarForm.cs",
-              "ToolTip": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\EnvVarForm.cs [Design]",
-              "RelativeToolTip": "Api Exploder\\Forms\\EnvVarForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T20:34:12.174Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EnvVarForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\EnvVarForm.Designer.cs",
-              "RelativeDocumentMoniker": "Api Exploder\\Forms\\EnvVarForm.Designer.cs",
-              "ToolTip": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\EnvVarForm.Designer.cs",
-              "RelativeToolTip": "Api Exploder\\Forms\\EnvVarForm.Designer.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAQwDIAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T16:19:23.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EnvVarForm.cs",
-              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\EnvVarForm.cs",
-              "RelativeDocumentMoniker": "Api Exploder\\Forms\\EnvVarForm.cs",
-              "ToolTip": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\EnvVarForm.cs",
-              "RelativeToolTip": "Api Exploder\\Forms\\EnvVarForm.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB4AAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T16:18:58.633Z",
               "EditorCaption": ""
             }
           ]
