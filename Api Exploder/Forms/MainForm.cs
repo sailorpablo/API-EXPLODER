@@ -205,31 +205,34 @@ namespace Api_Exploder
         {
             if (checkBox1.Checked == true) 
             {
-                // Salva a posição atual do cursor para restaurar  depois
+                // Salva a posição atual do cursor 
                 int cursorPositionInit = textBody.SelectionStart;
 
                 // Desabilita temporariamente o evento TextChanged para evitar loops infinitos
                 textBody.TextChanged -= textBody_TextChanged;
 
-                // Define um padrão de regex para encontrar o texto entre {{$ e }}
+                // Define um padrão de regex para encontrar a delcaracao de variaveis {{$ e }}
                 string patternOpen = @"\{\{\$";
                 string patternClose = @"\}\}";
-                var matchesPatterOpen = System.Text.RegularExpressions.Regex.Matches(textBody.Text, patternOpen);
-                var matchesPatterClose = System.Text.RegularExpressions.Regex.Matches(textBody.Text, patternClose);
+                var matchesPatterOpen = Regex.Matches(textBody.Text, patternOpen);
+                var matchesPatterClose = Regex.Matches(textBody.Text, patternClose);
 
-                // Primeiro, limpa toda a formatação
+                // Limpa toda a formatação pre-existente
                 textBody.SelectAll();
                 textBody.Font = new Font(textBody.Font, FontStyle.Regular);
-
-           
+                
+                // Se tem declaracao aberta {{$ sem }} transforma a partir do cursor, tudo em italico + bold
                 if (matchesPatterOpen.Count > matchesPatterClose.Count)
                 {   
                     int lengthTextRemaining = textBody.Text.Length - cursorPositionInit;
 
+                    textBody.Select(cursorPositionInit - 3, cursorPositionInit);
+                    textBody.SelectionFont = new Font(textBody.Font, FontStyle.Bold | FontStyle.Italic);
+
                     textBody.Select(cursorPositionInit, lengthTextRemaining);
                     textBody.SelectionFont = new Font(textBody.Font, FontStyle.Bold | FontStyle.Italic);
                 } 
-                
+                // Se todas as declaracoes tem abertura e fechamento, formata tudo a partir do cursor 
                 else if (matchesPatterOpen.Count == matchesPatterClose.Count)
 
                 {
