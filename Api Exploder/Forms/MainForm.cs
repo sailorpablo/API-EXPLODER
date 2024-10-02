@@ -192,7 +192,7 @@ namespace Api_Exploder
 
             MatchCollection matches = Regex.Matches(textBody.Text, patternVariable);
 
-            if(checkBox1.Checked == true)
+            if (checkBox1.Checked == true)
             {
                 foreach (Match match in matches)
                 {
@@ -224,7 +224,7 @@ namespace Api_Exploder
 
         private void textBody_TextChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == true) 
+            if (checkBox1.Checked == true)
             {
                 // Salva a posição atual do cursor 
                 int cursorPositionInit = textBody.SelectionStart;
@@ -241,10 +241,10 @@ namespace Api_Exploder
                 // Limpa toda a formatação pre-existente
                 textBody.SelectAll();
                 textBody.Font = new Font(textBody.Font, FontStyle.Regular);
-                
+
                 // Se tem declaracao aberta {{$ sem }} transforma a partir do cursor, tudo em italico + bold
                 if (matchesPatterOpen.Count > matchesPatterClose.Count)
-                {   
+                {
                     int lengthTextRemaining = textBody.Text.Length - cursorPositionInit;
 
                     textBody.Select(cursorPositionInit - 3, cursorPositionInit);
@@ -252,12 +252,15 @@ namespace Api_Exploder
 
                     textBody.Select(cursorPositionInit, lengthTextRemaining);
                     textBody.SelectionFont = new Font(textBody.Font, FontStyle.Bold | FontStyle.Italic);
-                } 
+                }
                 // Se todas as declaracoes tem abertura e fechamento, formata tudo a partir do cursor 
                 else if (matchesPatterOpen.Count == matchesPatterClose.Count)
 
                 {
-                    textBody.Select(cursorPositionInit, 0);
+
+                    int lengthTextRemaining = textBody.Text.Length - cursorPositionInit;
+
+                    textBody.Select(cursorPositionInit, lengthTextRemaining);
                     textBody.SelectionFont = new Font(textBody.Font, FontStyle.Regular);
                 };
 
@@ -270,6 +273,13 @@ namespace Api_Exploder
                 // Reanexa o evento TextChanged
                 textBody.TextChanged += textBody_TextChanged;
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            LogsForm logsForm = new LogsForm();
+
+            logsForm.Show();
         }
     }
 }

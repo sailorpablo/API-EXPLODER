@@ -169,7 +169,6 @@
             textBoxMultiple.Size = new Size(100, 23);
             textBoxMultiple.TabIndex = 7;
             textBoxMultiple.Visible = false;
-    
             textBoxMultiple.TextChanged += textBoxMultiple_TextChanged;
             // 
             // button1
@@ -180,7 +179,7 @@
             button1.TabIndex = 8;
             button1.Text = "Logs";
             button1.UseVisualStyleBackColor = true;
-     
+            button1.Click += button1_Click_1;
             // 
             // button2
             // 
