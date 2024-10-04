@@ -43,7 +43,7 @@ namespace Api_Exploder
             {
                 using (var cmd= DbConnection().CreateCommand())
                 {
-                    cmd.CommandText = "CREATE TABLE IF NOT EXISTS tb_logs(id INT(20) NOT NULL AUTO_INCREMENT," +
+                    cmd.CommandText = "CREATE TABLE IF NOT EXISTS tb_logs(id INT(20) NOT NULL," +
                     " request VARCHAR(8000) DEFAULT NULL, response VARCHAR(8000) DEFAULT NULL, PRIMARY KEY ('id') )";
                     cmd.ExecuteNonQuery();
                 }

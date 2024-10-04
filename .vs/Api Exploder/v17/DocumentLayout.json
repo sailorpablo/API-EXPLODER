@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|c:\\users\\josep\\source\\repos\\api exploder\\api exploder\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|c:\\users\\josep\\source\\repos\\api exploder\\api exploder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|c:\\users\\josep\\source\\repos\\api exploder\\api exploder\\forms\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\forms\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|c:\\users\\josep\\source\\repos\\api exploder\\api exploder\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|C:\\Users\\josep\\source\\repos\\Api Exploder\\api exploder\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -52,14 +52,14 @@
               "RelativeDocumentMoniker": "Api Exploder\\DAL.cs",
               "ToolTip": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\DAL.cs",
               "RelativeToolTip": "Api Exploder\\DAL.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAqwC8AAAAqAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAlwDAAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-03T23:47:26.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Program.cs",
               "RelativeDocumentMoniker": "Api Exploder\\Program.cs",
@@ -72,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "EnviromentVariables.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\EnviromentVariables.cs",
               "RelativeDocumentMoniker": "Api Exploder\\EnviromentVariables.cs",
@@ -85,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "LogsForm.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\LogsForm.cs",
               "RelativeDocumentMoniker": "Api Exploder\\Forms\\LogsForm.cs",
@@ -98,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "LogsForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\LogsForm.cs",
               "RelativeDocumentMoniker": "Api Exploder\\Forms\\LogsForm.cs",
@@ -110,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "Api Exploder\\Forms\\MainForm.Designer.cs",
@@ -135,13 +135,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\MainForm.cs",
               "RelativeDocumentMoniker": "Api Exploder\\Forms\\MainForm.cs",
               "ToolTip": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\MainForm.cs",
               "RelativeToolTip": "Api Exploder\\Forms\\MainForm.cs",
-              "ViewState": "AQIAAKkAAAAAAAAAAAA7wBkBAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-14T16:43:07.368Z",
               "EditorCaption": ""

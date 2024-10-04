@@ -22,7 +22,8 @@ namespace Api_Exploder
 
         private void Main_Load(object sender, EventArgs e)
         {
-
+            DALapi_exploder.CriarBancoSQLite();
+            DALapi_exploder.CriarTabelasSQLite();
         }
 
         private async void SendRequestApi(string body, string url)
