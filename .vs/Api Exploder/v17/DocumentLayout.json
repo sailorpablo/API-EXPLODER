@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\josep\\source\\repos\\Api Exploder\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|c:\\users\\josep\\source\\repos\\api exploder\\api exploder\\forms\\logsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\forms\\logsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|c:\\users\\josep\\source\\repos\\api exploder\\api exploder\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|c:\\users\\josep\\source\\repos\\api exploder\\api exploder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|c:\\users\\josep\\source\\repos\\api exploder\\api exploder\\enviromentvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\enviromentvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|c:\\users\\josep\\source\\repos\\api exploder\\api exploder\\forms\\logsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\forms\\logsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|c:\\users\\josep\\source\\repos\\api exploder\\api exploder\\forms\\logsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|solutionrelative:api exploder\\forms\\logsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{046323B1-91D9-4A77-BC86-1AB81EA6E5AC}|Api Exploder\\Api Exploder.csproj|c:\\users\\josep\\source\\repos\\api exploder\\api exploder\\forms\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,24 +42,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DAL.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\DAL.cs",
+              "RelativeDocumentMoniker": "Api Exploder\\DAL.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\DAL.cs",
+              "RelativeToolTip": "Api Exploder\\DAL.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAqwC8AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T23:47:26.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Program.cs",
+              "RelativeDocumentMoniker": "Api Exploder\\Program.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Program.cs",
+              "RelativeToolTip": "Api Exploder\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T23:45:32.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnviromentVariables.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\EnviromentVariables.cs",
+              "RelativeDocumentMoniker": "Api Exploder\\EnviromentVariables.cs",
+              "ToolTip": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\EnviromentVariables.cs",
+              "RelativeToolTip": "Api Exploder\\EnviromentVariables.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T23:45:30.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "LogsForm.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\LogsForm.cs",
               "RelativeDocumentMoniker": "Api Exploder\\Forms\\LogsForm.cs",
               "ToolTip": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\LogsForm.cs",
               "RelativeToolTip": "Api Exploder\\Forms\\LogsForm.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAUwBoAAAAAAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAUwBgAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-30T19:11:06.701Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "LogsForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\LogsForm.cs",
               "RelativeDocumentMoniker": "Api Exploder\\Forms\\LogsForm.cs",
@@ -59,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "Api Exploder\\Forms\\MainForm.Designer.cs",
@@ -72,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\MainForm.cs",
               "RelativeDocumentMoniker": "Api Exploder\\Forms\\MainForm.cs",
@@ -84,13 +135,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\MainForm.cs",
               "RelativeDocumentMoniker": "Api Exploder\\Forms\\MainForm.cs",
               "ToolTip": "C:\\Users\\josep\\source\\repos\\Api Exploder\\Api Exploder\\Forms\\MainForm.cs",
               "RelativeToolTip": "Api Exploder\\Forms\\MainForm.cs",
-              "ViewState": "AQIAAKkAAAAAAAAAAAAswBkBAAAcAAAA",
+              "ViewState": "AQIAAKkAAAAAAAAAAAA7wBkBAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-14T16:43:07.368Z",
               "EditorCaption": ""

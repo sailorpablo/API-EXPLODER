@@ -18,3 +18,8 @@ C:\Users\josep\source\repos\Api Exploder\Api Exploder\obj\Debug\net8.0-windows\A
 C:\Users\josep\source\repos\Api Exploder\Api Exploder\obj\Debug\net8.0-windows\Api_Exploder.MainForm.resources
 C:\Users\josep\source\repos\Api Exploder\Api Exploder\obj\Debug\net8.0-windows\Api_Exploder.Forms.LogsForm.resources
 C:\Users\josep\source\repos\Api Exploder\Api Exploder\obj\Debug\net8.0-windows\Api_Exploder.Properties.Resources.resources
+C:\Users\josep\source\repos\Api Exploder\Api Exploder\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libsqlite3.so
+C:\Users\josep\source\repos\Api Exploder\Api Exploder\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libsqlite3.dylib
+C:\Users\josep\source\repos\Api Exploder\Api Exploder\bin\Debug\net8.0-windows\runtimes\win7-x64\native\sqlite3.dll
+C:\Users\josep\source\repos\Api Exploder\Api Exploder\bin\Debug\net8.0-windows\runtimes\win7-x86\native\sqlite3.dll
+C:\Users\josep\source\repos\Api Exploder\Api Exploder\obj\Debug\net8.0-windows\Api Expl.B2274B18.Up2Date
