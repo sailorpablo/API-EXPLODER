@@ -111,6 +111,7 @@
             textStatus.Name = "textStatus";
             textStatus.Size = new Size(793, 23);
             textStatus.TabIndex = 3;
+            textStatus.TextChanged += textStatus_TextChanged;
             // 
             // label4
             // 

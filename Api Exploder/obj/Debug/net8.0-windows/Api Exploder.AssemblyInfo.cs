@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Api Exploder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1dc1142623265f5619508a1207c60b87172f6a39")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2dbedd1fb22c98de6d3d660b00d005e711a00506")]
 [assembly: System.Reflection.AssemblyProductAttribute("Api Exploder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Api Exploder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

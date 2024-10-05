@@ -73,6 +73,7 @@
             richTextBoxCentral.Size = new Size(371, 207);
             richTextBoxCentral.TabIndex = 0;
             richTextBoxCentral.Text = "";
+            richTextBoxCentral.TextChanged += richTextBoxCentral_TextChanged;
             // 
             // LogsForm
             // 

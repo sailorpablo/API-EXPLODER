@@ -30,7 +30,8 @@ namespace Api_Exploder
         {
 
             using HttpClient client = new HttpClient();
-
+            Logs new_logs = new Logs();
+            DALapi_exploder dalapi = new DALapi_exploder();
 
             if (checkBox1.Checked == true)
             {
@@ -79,12 +80,15 @@ namespace Api_Exploder
             {
 
                 HttpResponseMessage response = await client.PostAsync(url, content);
+                new_logs.request = url + body; // salvando o request no log da dal
 
                 string messageFind = "{";
                 string resultFind = "}";
 
 
                 string responseBody = await response.Content.ReadAsStringAsync();
+                new_logs.response = responseBody; // salvando o response no log da dal
+
 
                 int messageIndex = responseBody.IndexOf(messageFind);
                 int resultIndex = responseBody.IndexOf(resultFind);
@@ -103,6 +107,8 @@ namespace Api_Exploder
                     textStatus.Text = response.StatusCode.ToString();
 
                 }
+
+
             }
 
             catch
@@ -111,6 +117,8 @@ namespace Api_Exploder
                 textStatus.Text = "FAIL, ERROR IN URL!";
             }
 
+            DALapi_exploder.InsertLogs(new_logs);
+            
 
         }
 
@@ -281,6 +289,11 @@ namespace Api_Exploder
             LogsForm logsForm = new LogsForm();
 
             logsForm.Show();
+        }
+
+        private void textStatus_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
