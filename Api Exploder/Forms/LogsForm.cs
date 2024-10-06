@@ -17,6 +17,13 @@ namespace Api_Exploder.Forms
         {
             InitializeComponent();
             
+
+       
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
             DataTable tb_log = new DataTable();
 
             tb_log = DALapi_exploder.GetLogs();
@@ -25,13 +32,6 @@ namespace Api_Exploder.Forms
             {
                 richTextBoxCentral.Text = richTextBoxCentral.Text + row["request"].ToString();
             }
-
-       
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
 
         }
 

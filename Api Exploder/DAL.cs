@@ -61,6 +61,9 @@ namespace Api_Exploder
 
         public static DataTable GetLogs()
         {
+
+         
+
             SQLiteDataAdapter dataAdapter = null;
             DataTable dataTable = new DataTable();
 

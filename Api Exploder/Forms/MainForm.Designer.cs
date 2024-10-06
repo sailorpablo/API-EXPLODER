@@ -41,9 +41,9 @@
             radioBtnMultiple = new RadioButton();
             radioBtnExploder = new RadioButton();
             textBoxMultiple = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            checkBox1 = new CheckBox();
+            btnLogs = new Button();
+            btnEnviromentVariables = new Button();
+            checkBoxEnviromentVariables = new CheckBox();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             SuspendLayout();
             // 
@@ -103,7 +103,7 @@
             btnSend.TabIndex = 5;
             btnSend.Text = "SEND";
             btnSend.UseVisualStyleBackColor = true;
-            btnSend.Click += button1_Click;
+            btnSend.Click += btnSend_Click;
             // 
             // textStatus
             // 
@@ -172,35 +172,35 @@
             textBoxMultiple.Visible = false;
             textBoxMultiple.TextChanged += textBoxMultiple_TextChanged;
             // 
-            // button1
+            // btnLogs
             // 
-            button1.Location = new Point(845, 462);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 8;
-            button1.Text = "Logs";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click_1;
+            btnLogs.Location = new Point(845, 462);
+            btnLogs.Name = "btnLogs";
+            btnLogs.Size = new Size(75, 23);
+            btnLogs.TabIndex = 8;
+            btnLogs.Text = "Logs";
+            btnLogs.UseVisualStyleBackColor = true;
+            btnLogs.Click += btnLogs_Click;
             // 
-            // button2
+            // btnEnviromentVariables
             // 
-            button2.Location = new Point(730, 12);
-            button2.Name = "button2";
-            button2.Size = new Size(174, 23);
-            button2.TabIndex = 9;
-            button2.Text = "Enviroment Variables";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btnEnviromentVariables.Location = new Point(730, 12);
+            btnEnviromentVariables.Name = "btnEnviromentVariables";
+            btnEnviromentVariables.Size = new Size(174, 23);
+            btnEnviromentVariables.TabIndex = 9;
+            btnEnviromentVariables.Text = "Enviroment Variables";
+            btnEnviromentVariables.UseVisualStyleBackColor = true;
+            btnEnviromentVariables.Click += button2_Click;
             // 
-            // checkBox1
+            // checkBoxEnviromentVariables
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(713, 17);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(15, 14);
-            checkBox1.TabIndex = 10;
-            checkBox1.UseVisualStyleBackColor = true;
-            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
+            checkBoxEnviromentVariables.AutoSize = true;
+            checkBoxEnviromentVariables.Location = new Point(713, 17);
+            checkBoxEnviromentVariables.Name = "checkBoxEnviromentVariables";
+            checkBoxEnviromentVariables.Size = new Size(15, 14);
+            checkBoxEnviromentVariables.TabIndex = 10;
+            checkBoxEnviromentVariables.UseVisualStyleBackColor = true;
+            checkBoxEnviromentVariables.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // MainForm
             // 
@@ -210,9 +210,9 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(947, 518);
-            Controls.Add(checkBox1);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(checkBoxEnviromentVariables);
+            Controls.Add(btnEnviromentVariables);
+            Controls.Add(btnLogs);
             Controls.Add(textBoxMultiple);
             Controls.Add(radioBtnExploder);
             Controls.Add(radioBtnMultiple);
@@ -246,9 +246,9 @@
         private RadioButton radioBtnMultiple;
         private RadioButton radioBtnExploder;
         private TextBox textBoxMultiple;
-        private Button button1;
-        private Button button2;
-        private CheckBox checkBox1;
+        private Button btnLogs;
+        private Button btnEnviromentVariables;
+        private CheckBox checkBoxEnviromentVariables;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

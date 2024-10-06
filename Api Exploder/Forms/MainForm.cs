@@ -30,10 +30,15 @@ namespace Api_Exploder
         {
 
             using HttpClient client = new HttpClient();
-            Logs new_logs = new Logs();
-            DALapi_exploder dalapi = new DALapi_exploder();
 
-            if (checkBox1.Checked == true)
+            Logs new_logs = new Logs(); //instanciando um novo objeto da classe "Logs" que eu criei para armazenar os logs desse requisição, com base na DAL
+
+            DALapi_exploder dalapi = new DALapi_exploder(); //instanciando um novo objeto da classe DALapi_exploder
+
+            new_logs.request = url + body; // salvando o request no log da dal
+
+            //tratando algumas variáveis dentro da requisição quando o checkbox "Enviroment Variables" está checado. 
+            if (checkBoxEnviromentVariables.Checked == true)
             {
                 EnviromentVariables variables = new EnviromentVariables(); //pega classe das variaves
 
@@ -73,28 +78,25 @@ namespace Api_Exploder
                 }
             }
 
-            var content = new StringContent(body, Encoding.UTF8, "application/json");
+            var content = new StringContent(body, Encoding.UTF8, "application/json"); //jogando na variável "Content" que é um objeto do tipo StringContent usado para montar um padrão para requisições 
 
-
+            //executando as requisições
             try
             {
+                // Requisição ->
+                HttpResponseMessage response = await client.PostAsync(url, content); //instanciando um objeto do HttpResponseMessage para pegar a reponse da requisição também feita nessa linha usando um metodo do HttpClient
 
-                HttpResponseMessage response = await client.PostAsync(url, content);
-                new_logs.request = url + body; // salvando o request no log da dal
+                string responseBody = await response.Content.ReadAsStringAsync(); //transformando o response em string
+
+                new_logs.response = responseBody; // salvando o response em uma propriedade da classe Logs, só agora pois é agora que eu monto o objeto do reposponse em string
 
                 string messageFind = "{";
                 string resultFind = "}";
-
-
-                string responseBody = await response.Content.ReadAsStringAsync();
-                new_logs.response = responseBody; // salvando o response no log da dal
-
-
                 int messageIndex = responseBody.IndexOf(messageFind);
                 int resultIndex = responseBody.IndexOf(resultFind);
+                // Requisição <-
 
 
-                // Reposta
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
 
@@ -107,57 +109,13 @@ namespace Api_Exploder
                     textStatus.Text = response.StatusCode.ToString();
 
                 }
-
-
             }
-
             catch
             {
-
-                textStatus.Text = "FAIL, ERROR IN URL!";
+                textStatus.Text = "FAIL, CANNOT SEND A REQUEST!";
             }
 
-            DALapi_exploder.InsertLogs(new_logs);
-            
-
-        }
-
-        private async void button1_Click(object sender, EventArgs e)
-        {
-            var url = textUrl.Text;
-            var body = textBody.Text;
-
-            string options = "";
-
-            if (radioBtnSingle.Checked)
-            {
-                options = "single";
-
-                SendRequestApi(body, url);
-            }
-            else if (radioBtnMultiple.Checked)
-            {
-                options = "multiple";
-
-                int multipleCount = Convert.ToInt32(textBoxMultiple.Text);
-
-                for (int i = 0; i < multipleCount; i++)
-                {
-                    SendRequestApi(body, url);
-                }
-
-
-
-
-            }
-            else if (radioBtnExploder.Checked)
-            {
-                options = "exploder";
-            }
-
-
-
-
+            DALapi_exploder.InsertLogs(new_logs); //executa comando para inserir os novos logs, na tabela tb_logs 
 
         }
 
@@ -201,7 +159,7 @@ namespace Api_Exploder
 
             MatchCollection matches = Regex.Matches(textBody.Text, patternVariable);
 
-            if (checkBox1.Checked == true)
+            if (checkBoxEnviromentVariables.Checked == true)
             {
                 foreach (Match match in matches)
                 {
@@ -221,7 +179,7 @@ namespace Api_Exploder
                 }
             }
 
-            if (checkBox1.Checked == false)
+            if (checkBoxEnviromentVariables.Checked == false)
             {
                 textBody.SelectAll();
                 textBody.SelectionFont = new Font(textBody.Font, FontStyle.Regular);
@@ -233,7 +191,7 @@ namespace Api_Exploder
 
         private void textBody_TextChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == true)
+            if (checkBoxEnviromentVariables.Checked == true)
             {
                 // Salva a posição atual do cursor 
                 int cursorPositionInit = textBody.SelectionStart;
@@ -284,7 +242,7 @@ namespace Api_Exploder
             }
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void btnLogs_Click(object sender, EventArgs e)
         {
             LogsForm logsForm = new LogsForm();
 
@@ -293,6 +251,39 @@ namespace Api_Exploder
 
         private void textStatus_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            var url = textUrl.Text;
+            var body = textBody.Text;
+
+            string options = "";
+
+            if (radioBtnSingle.Checked)
+            {
+                options = "single";
+
+                SendRequestApi(body, url);
+            }
+            else if (radioBtnMultiple.Checked)
+            {
+                options = "multiple";
+
+                int multipleCount = Convert.ToInt32(textBoxMultiple.Text);
+
+                for (int i = 0; i < multipleCount; i++)
+                {
+                    SendRequestApi(body, url);
+                }
+
+
+            }
+            else if (radioBtnExploder.Checked)
+            {
+                options = "exploder";
+            }
 
         }
     }
