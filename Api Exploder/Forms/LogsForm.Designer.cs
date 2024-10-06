@@ -29,9 +29,11 @@
         private void InitializeComponent()
         {
             splitContainer1 = new SplitContainer();
-            labelRecentReq = new Label();
+            btnRecentReq = new Button();
+            richTextBoxCentral = new RichTextBox();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
             SuspendLayout();
             // 
@@ -43,25 +45,33 @@
             // 
             // splitContainer1.Panel1
             // 
-            splitContainer1.Panel1.Controls.Add(labelRecentReq);
+            splitContainer1.Panel1.Controls.Add(btnRecentReq);
             // 
             // splitContainer1.Panel2
             // 
+            splitContainer1.Panel2.Controls.Add(richTextBoxCentral);
             splitContainer1.Panel2.Paint += splitContainer1_Panel2_Paint;
             splitContainer1.Size = new Size(800, 450);
             splitContainer1.SplitterDistance = 171;
             splitContainer1.TabIndex = 0;
             // 
-            // labelRecentReq
+            // btnRecentReq
             // 
-            labelRecentReq.AutoSize = true;
-            labelRecentReq.ForeColor = SystemColors.ControlText;
-            labelRecentReq.Location = new Point(12, 36);
-            labelRecentReq.Name = "labelRecentReq";
-            labelRecentReq.Size = new Size(122, 15);
-            labelRecentReq.TabIndex = 0;
-            labelRecentReq.Text = "Recents requests/resp";
-            labelRecentReq.Click += label1_Click;
+            btnRecentReq.Location = new Point(35, 46);
+            btnRecentReq.Name = "btnRecentReq";
+            btnRecentReq.Size = new Size(75, 23);
+            btnRecentReq.TabIndex = 0;
+            btnRecentReq.Text = "Recent Req";
+            btnRecentReq.UseVisualStyleBackColor = true;
+            btnRecentReq.Click += btnRecentReq_Click;
+            // 
+            // richTextBoxCentral
+            // 
+            richTextBoxCentral.Location = new Point(15, 46);
+            richTextBoxCentral.Name = "richTextBoxCentral";
+            richTextBoxCentral.Size = new Size(598, 371);
+            richTextBoxCentral.TabIndex = 0;
+            richTextBoxCentral.Text = "";
             // 
             // LogsForm
             // 
@@ -72,7 +82,7 @@
             Name = "LogsForm";
             Text = "LogsForm";
             splitContainer1.Panel1.ResumeLayout(false);
-            splitContainer1.Panel1.PerformLayout();
+            splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
             ResumeLayout(false);
@@ -81,6 +91,7 @@
         #endregion
 
         private SplitContainer splitContainer1;
-        private Label labelRecentReq;
+        private Button btnRecentReq;
+        private RichTextBox richTextBoxCentral;
     }
 }

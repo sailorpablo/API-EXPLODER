@@ -16,22 +16,9 @@ namespace Api_Exploder.Forms
         public LogsForm()
         {
             InitializeComponent();
-            
 
-       
 
-        }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            DataTable tb_log = new DataTable();
-
-            tb_log = DALapi_exploder.GetLogs();
-
-            foreach (DataRow row in tb_log.Rows)
-            {
-                richTextBoxCentral.Text = richTextBoxCentral.Text + row["request"].ToString();
-            }
 
         }
 
@@ -40,9 +27,18 @@ namespace Api_Exploder.Forms
 
         }
 
-        private void richTextBoxCentral_TextChanged(object sender, EventArgs e)
+        private void btnRecentReq_Click(object sender, EventArgs e)
         {
+            DataTable tb_log = new DataTable();
 
+            tb_log = DALapi_exploder.GetLogs();
+
+
+
+            foreach (DataRow row in tb_log.Rows)
+            {
+                richTextBoxCentral.Text = richTextBoxCentral.Text + row["request"].ToString();
+            }
         }
     }
 }
