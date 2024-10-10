@@ -8,9 +8,10 @@ namespace Api_Exploder
 {
     public class Logs
     {
-        public  int id_log { get; set; }
         public  string request { get; set; }
         public  string response { get; set; }
+
+
 
     }
 }

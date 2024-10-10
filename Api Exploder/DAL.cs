@@ -46,8 +46,12 @@ namespace Api_Exploder
             {
                 using (var cmd= DbConnection().CreateCommand())
                 {
-                    cmd.CommandText = "CREATE TABLE IF NOT EXISTS tb_logs(id INTEGER PRIMARY KEY AUTOINCREMENT," +
-                    " request VARCHAR(8000) DEFAULT NULL, response VARCHAR(8000) DEFAULT NULL)";
+                    cmd.CommandText = "CREATE TABLE IF NOT EXISTS " +
+                    "tb_logs(" +
+                    "id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                    "request VARCHAR(8000) DEFAULT NULL," +
+                    "response VARCHAR(8000) DEFAULT NULL," +
+                    "dt_request DATETIME DEFAULT NULL)";
                     cmd.ExecuteNonQuery();
                 }
 
@@ -94,10 +98,11 @@ namespace Api_Exploder
             {
                 using (var cmd = DbConnection().CreateCommand())
                 {
-                    cmd.CommandText = "INSERT INTO tb_logs (request, response) VALUES (@request,@response)";
+                    cmd.CommandText = "INSERT INTO tb_logs (request, response, dt_request) VALUES (@request,@response,datetime('now'))";
                 
                     cmd.Parameters.AddWithValue("@request", log.request);
                     cmd.Parameters.AddWithValue("@response", log.response);
+
                     cmd.ExecuteNonQuery();
                 }
             }

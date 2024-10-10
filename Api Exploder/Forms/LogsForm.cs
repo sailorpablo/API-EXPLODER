@@ -37,7 +37,7 @@ namespace Api_Exploder.Forms
 
             foreach (DataRow row in tb_log.Rows)
             {
-                richTextBoxCentral.Text = richTextBoxCentral.Text + row["request"].ToString();
+                richTextBoxCentral.Text = richTextBoxCentral.Text + row["id"].ToString() + row["request"].ToString() + row["dt_request"].ToString() ;
             }
         }
     }
