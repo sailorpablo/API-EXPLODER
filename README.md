@@ -8,8 +8,8 @@ Tecnologias:
 
 Features:
 
-- Executavel
-- Salvar Logs
-- Manipulação de variaveis de ambiente
-- Executar requisições múltiplas
-- HealthCheck de APIs
+- Executavel (0%)
+- Salvar Logs (50%)
+- Manipulação de variaveis de ambiente (70%)
+- Executar requisições múltiplas (100%)
+- HealthCheck de APIs (0%)
