@@ -28,14 +28,14 @@ namespace Api_Exploder.Forms
         }
 
         private void btnRecentReq_Click(object sender, EventArgs e)
+
         {
-            DataTable tb_log = new DataTable();
+            DataTable tb_log = new DataTable(); //cria uma instancia do objeto DataTable
 
-            tb_log = DALapi_exploder.GetLogs();
+            tb_log = DALapi_exploder.GetLogs(); //instancia criada recebe select com todas as requisições
 
 
-
-            foreach (DataRow row in tb_log.Rows)
+            foreach (DataRow row in tb_log.Rows) // pra cada linha do select, insere no texto princial os valores daquela linha
             {
                 richTextBoxCentral.Text = richTextBoxCentral.Text + row["id"].ToString() + row["request"].ToString() + row["dt_request"].ToString() ;
             }

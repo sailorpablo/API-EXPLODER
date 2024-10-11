@@ -11,7 +11,5 @@ namespace Api_Exploder
         public  string request { get; set; }
         public  string response { get; set; }
 
-
-
     }
 }
