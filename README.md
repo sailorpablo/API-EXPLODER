@@ -14,3 +14,10 @@ Features:
 - Salvar e visualizar Logs (100%)
 - Executavel (100%)
 
+
+
+INSTALADOR DO PROGRAMA: 
+
+https://drive.google.com/file/d/1MElco9zCFWPwPHOCMDbs9FsnnzOiozR0/view?usp=sharing
+
+![image](https://github.com/user-attachments/assets/4d9eaa10-f4a2-4463-814e-2db05a9350a5)
