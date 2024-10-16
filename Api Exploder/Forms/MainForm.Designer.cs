@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -39,7 +38,6 @@
             label4 = new Label();
             radioBtnSingle = new RadioButton();
             radioBtnMultiple = new RadioButton();
-            radioBtnExploder = new RadioButton();
             textBoxMultiple = new TextBox();
             btnLogs = new Button();
             btnEnviromentVariables = new Button();
@@ -128,7 +126,7 @@
             radioBtnSingle.AutoSize = true;
             radioBtnSingle.BackColor = Color.White;
             radioBtnSingle.Checked = true;
-            radioBtnSingle.Location = new Point(192, 327);
+            radioBtnSingle.Location = new Point(282, 319);
             radioBtnSingle.Name = "radioBtnSingle";
             radioBtnSingle.Size = new Size(57, 19);
             radioBtnSingle.TabIndex = 6;
@@ -141,7 +139,7 @@
             // 
             radioBtnMultiple.AutoSize = true;
             radioBtnMultiple.BackColor = Color.White;
-            radioBtnMultiple.Location = new Point(411, 327);
+            radioBtnMultiple.Location = new Point(569, 319);
             radioBtnMultiple.Name = "radioBtnMultiple";
             radioBtnMultiple.Size = new Size(69, 19);
             radioBtnMultiple.TabIndex = 6;
@@ -150,22 +148,9 @@
             radioBtnMultiple.UseVisualStyleBackColor = false;
             radioBtnMultiple.Click += radioBtnMultiple_Click;
             // 
-            // radioBtnExploder
-            // 
-            radioBtnExploder.AutoSize = true;
-            radioBtnExploder.BackColor = Color.White;
-            radioBtnExploder.Location = new Point(664, 327);
-            radioBtnExploder.Name = "radioBtnExploder";
-            radioBtnExploder.Size = new Size(81, 19);
-            radioBtnExploder.TabIndex = 6;
-            radioBtnExploder.TabStop = true;
-            radioBtnExploder.Text = "EXPLODER";
-            radioBtnExploder.UseVisualStyleBackColor = false;
-            radioBtnExploder.Click += radioBtnExploder_Click;
-            // 
             // textBoxMultiple
             // 
-            textBoxMultiple.Location = new Point(486, 326);
+            textBoxMultiple.Location = new Point(644, 319);
             textBoxMultiple.Name = "textBoxMultiple";
             textBoxMultiple.Size = new Size(100, 23);
             textBoxMultiple.TabIndex = 7;
@@ -207,14 +192,12 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(947, 518);
             Controls.Add(checkBoxEnviromentVariables);
             Controls.Add(btnEnviromentVariables);
             Controls.Add(btnLogs);
             Controls.Add(textBoxMultiple);
-            Controls.Add(radioBtnExploder);
             Controls.Add(radioBtnMultiple);
             Controls.Add(radioBtnSingle);
             Controls.Add(btnSend);
@@ -244,7 +227,6 @@
         private Label label4;
         private RadioButton radioBtnSingle;
         private RadioButton radioBtnMultiple;
-        private RadioButton radioBtnExploder;
         private TextBox textBoxMultiple;
         private Button btnLogs;
         private Button btnEnviromentVariables;
