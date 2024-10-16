@@ -280,10 +280,7 @@ namespace Api_Exploder
 
 
             }
-            else if (radioBtnExploder.Checked)
-            {
-                options = "exploder";
-            }
+       
 
         }
     }
