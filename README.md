@@ -11,6 +11,6 @@ Features:
 - Enviar requisições (100%)
 - Executar requisições múltiplas (100%)
 - Manipulação de variaveis de ambiente (90%)
-- Salvar Logs (75%)
+- Salvar e visualizar Logs (75%)
 - Executavel (0%)
-- EXPLODIR UMA API!!!!!! (0%)
+
