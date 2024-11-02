@@ -1,22 +1,20 @@
-Aplicativo Gerenciador de Requisicoes para Apis.
+API Request Manager Application~~
 
-Tecnologias:
+Technologies:
 
 - C# .NET
 - SQLite
-- Windows Form
-
+- Windows Forms
+  
 Features:
 
-- Enviar requisições (100%)
-- Executar requisições múltiplas (100%)
-- Manipulação de variaveis de ambiente (100%)
-- Salvar e visualizar Logs (100%)
-- Executavel (100%)
+- Send requests (100%)
+- Execute multiple requests (100%)
+- Environment variable management (100%)
+- Save and view logs (100%)
+- Executable (100%)
 
-
-
-INSTALADOR DO PROGRAMA: 
+PROGRAM INSTALLER:
 
 https://drive.google.com/file/d/1MElco9zCFWPwPHOCMDbs9FsnnzOiozR0/view?usp=sharing
 
